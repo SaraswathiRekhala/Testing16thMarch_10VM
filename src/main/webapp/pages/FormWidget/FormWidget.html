@@ -1,0 +1,39 @@
+<wm-page pagetitle="Form Widget" name="page1">
+    <wm-header content="header" name="header1"></wm-header>
+    <wm-top-nav content="topnav" name="top_nav1"></wm-top-nav>
+    <wm-content name="content1">
+        <wm-left-panel columnwidth="2" content="leftnav" name="left_panel1"></wm-left-panel>
+        <wm-page-content columnwidth="10" name="page_content1">
+            <wm-form errormessage="" captionposition="top" title="Form" enctype="application/x-www-form-urlencoded" method="post" dataset="bind:Variables.HrdbCreateUser.dataSet" captionalign="left" name="createUserForm1">
+                <wm-layoutgrid columns="2" name="layoutgrid1">
+                    <wm-gridrow name="gridrow1"></wm-gridrow>
+                    <wm-gridrow name="gridrow2"></wm-gridrow>
+                    <wm-gridrow name="gridrow3">
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn1">
+                            <wm-form-field readonly="false" name="User_password" displayname="Password" key="User.password" type="string" show="true" widget="text"></wm-form-field>
+                        </wm-gridcolumn>
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn2">
+                            <wm-form-field readonly="false" name="User_role" displayname="Role" key="User.role" type="string" show="true" widget="text"></wm-form-field>
+                        </wm-gridcolumn>
+                    </wm-gridrow>
+                    <wm-gridrow name="gridrow4">
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn3">
+                            <wm-form-field readonly="false" name="User_tenantId" displayname="Tenant Id" key="User.tenantId" type="integer" show="true" widget="number" textalign="right"></wm-form-field>
+                        </wm-gridcolumn>
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn4">
+                            <wm-form-field readonly="false" name="User_userId" displayname="User Id" key="User.userId" type="integer" show="true" widget="number" textalign="right"></wm-form-field>
+                        </wm-gridcolumn>
+                    </wm-gridrow>
+                    <wm-gridrow name="gridrow5">
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn5">
+                            <wm-form-field readonly="false" name="User_username" displayname="Username" key="User.username" type="string" show="true" widget="text"></wm-form-field>
+                        </wm-gridcolumn>
+                    </wm-gridrow>
+                </wm-layoutgrid>
+                <wm-form-action key="reset" class="form-reset btn-secondary" iconclass="wi wi-refresh" display-name="Reset" type="reset"></wm-form-action>
+                <wm-form-action key="save" class="form-save btn-success" iconclass="wi wi-save" display-name="Save" type="submit"></wm-form-action>
+            </wm-form>
+        </wm-page-content>
+    </wm-content>
+    <wm-footer content="footer" name="footer1"></wm-footer>
+</wm-page>

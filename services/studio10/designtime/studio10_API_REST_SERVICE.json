@@ -1,0 +1,272 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "2.0",
+    "x-WM-USE_PROXY_FOR_WEB" : true,
+    "x-WM-USE_PROXY_FOR_MOBILE" : true,
+    "x-WM-API_ID" : "1037ff44-1889-48ec-9b8f-180b267f112e",
+    "x-WM-SERVICE_ID" : "wavemakeronline",
+    "x-WM-SERVICE_TYPE" : "RestService",
+    "x-WM-USE_WITH_CREDENTIALS" : false
+  },
+  "host" : "www.wavemakeronline.com",
+  "basePath" : "",
+  "tags" : [ {
+    "name" : "RestServiceVirtualController",
+    "description" : "Rest service swagger documentation"
+  } ],
+  "schemes" : [ "https" ],
+  "paths" : {
+    "/studio10/invoke/repo_2_wayBindingWMO9_4/services/hrdb/Department" : {
+      "get" : {
+        "tags" : [ "RestServiceVirtualController" ],
+        "operationId" : "studio10_RestServiceVirtualController-invoke",
+        "consumes" : [ "application/json" ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "schema" : {
+              "$ref" : "#/definitions/RootResponse"
+            }
+          }
+        },
+        "x-WM-METHOD_NAME" : "invoke",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY"
+      },
+      "x-WM-BASE_PATH" : "/studio10/invoke/repo_2_wayBindingWMO9_4/services/hrdb/Department",
+      "x-WM-TAG" : "RestServiceVirtualController",
+      "x-WM-RELATIVE_PATH" : "",
+      "x-WM-COMPLETE_PATH" : "${studio10.scheme}://${studio10.host}${studio10.basepath}/repo_2_wayBindingWMO9_4/services/hrdb/Department"
+    }
+  },
+  "definitions" : {
+    "employeeByManagerId" : {
+      "required" : [ "birthdate", "city", "department", "deptId", "empId", "firstname", "jobTitle", "lastname", "managerId", "password", "picurl", "role", "state", "street", "tenantId", "username", "zip" ],
+      "properties" : {
+        "zip" : {
+          "type" : "string"
+        },
+        "empId" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "firstname" : {
+          "type" : "string"
+        },
+        "birthdate" : {
+          "type" : "string"
+        },
+        "role" : {
+          "type" : "string"
+        },
+        "city" : {
+          "type" : "string"
+        },
+        "jobTitle" : {
+          "type" : "string"
+        },
+        "deptId" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "managerId" : {
+          "type" : "string"
+        },
+        "lastname" : {
+          "type" : "string"
+        },
+        "picurl" : {
+          "type" : "string"
+        },
+        "password" : {
+          "type" : "string"
+        },
+        "street" : {
+          "type" : "string"
+        },
+        "tenantId" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "state" : {
+          "type" : "string"
+        },
+        "department" : {
+          "type" : "string"
+        },
+        "username" : {
+          "type" : "string"
+        }
+      },
+      "x-WM-FULLY_QUALIFIED_NAME" : "studio10.employeeByManagerId",
+      "x-WM-TAGS" : [ "RestServiceVirtualController" ]
+    },
+    "employeesEntryItem" : {
+      "required" : [ "birthdate", "city", "department", "deptId", "empId", "employeeByManagerId", "firstname", "jobTitle", "lastname", "managerId", "password", "picurl", "role", "state", "street", "tenantId", "username", "zip" ],
+      "properties" : {
+        "zip" : {
+          "type" : "string"
+        },
+        "empId" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "firstname" : {
+          "type" : "string"
+        },
+        "birthdate" : {
+          "type" : "string"
+        },
+        "role" : {
+          "type" : "string"
+        },
+        "city" : {
+          "type" : "string"
+        },
+        "jobTitle" : {
+          "type" : "string"
+        },
+        "deptId" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "managerId" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "lastname" : {
+          "type" : "string"
+        },
+        "picurl" : {
+          "type" : "string"
+        },
+        "employeeByManagerId" : {
+          "type" : "string"
+        },
+        "password" : {
+          "type" : "string"
+        },
+        "street" : {
+          "type" : "string"
+        },
+        "tenantId" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "state" : {
+          "type" : "string"
+        },
+        "department" : {
+          "type" : "string"
+        },
+        "username" : {
+          "type" : "string"
+        }
+      },
+      "x-WM-FULLY_QUALIFIED_NAME" : "studio10.employeesEntryItem",
+      "x-WM-TAGS" : [ "RestServiceVirtualController" ]
+    },
+    "contentEntryItem" : {
+      "required" : [ "budget", "deptCode", "deptId", "employees", "location", "name", "q1", "q2", "q3", "q4", "tenantId" ],
+      "properties" : {
+        "q1" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "q2" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "q3" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "q4" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "deptId" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "tenantId" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "location" : {
+          "type" : "string"
+        },
+        "employees" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/employeesEntryItem"
+          },
+          "x-WM-IS_LIST" : true
+        },
+        "deptCode" : {
+          "type" : "string"
+        },
+        "budget" : {
+          "type" : "integer",
+          "format" : "int32"
+        }
+      },
+      "x-WM-FULLY_QUALIFIED_NAME" : "studio10.contentEntryItem",
+      "x-WM-TAGS" : [ "RestServiceVirtualController" ]
+    },
+    "java.lang.Object" : {
+      "x-WM-FULLY_QUALIFIED_NAME" : "studio10.java.lang.Object",
+      "x-WM-TAGS" : [ "RestServiceVirtualController" ]
+    },
+    "RootResponse" : {
+      "required" : [ "content", "first", "last", "number", "numberOfElements", "size", "sort", "totalElements", "totalPages" ],
+      "properties" : {
+        "number" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "last" : {
+          "type" : "boolean"
+        },
+        "numberOfElements" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "size" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "totalPages" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "sort" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/java.lang.Object"
+          },
+          "x-WM-IS_LIST" : true
+        },
+        "content" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/contentEntryItem"
+          },
+          "x-WM-IS_LIST" : true
+        },
+        "first" : {
+          "type" : "boolean"
+        },
+        "totalElements" : {
+          "type" : "integer",
+          "format" : "int32"
+        }
+      },
+      "x-WM-FULLY_QUALIFIED_NAME" : "studio10.RootResponse",
+      "x-WM-TAGS" : [ "RestServiceVirtualController" ]
+    }
+  }
+}

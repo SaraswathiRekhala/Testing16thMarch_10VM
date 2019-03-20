@@ -10,6 +10,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.hibernate.Hibernate;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,6 +29,7 @@ import com.wavemaker.runtime.data.export.DataExportOptions;
 import com.wavemaker.runtime.data.export.ExportType;
 import com.wavemaker.runtime.data.expression.QueryFilter;
 import com.wavemaker.runtime.data.model.AggregationInfo;
+import com.wavemaker.runtime.data.util.DaoUtils;
 import com.wavemaker.runtime.file.model.Downloadable;
 
 import com.testing16thmarch_10vm.hrdb.Department;
@@ -110,8 +112,23 @@ public class DepartmentServiceImpl implements DepartmentService {
     public Department update(Department department) {
         LOGGER.debug("Updating Department with information: {}", department);
 
+        List<Employee> employees = department.getEmployees();
+        if(employees != null && Hibernate.isInitialized(employees)) {
+            employees.forEach(_employee -> _employee.setDepartment(department));
+        }
+
         this.wmGenericDao.update(department);
         this.wmGenericDao.refresh(department);
+
+        // Deleting children which are not present in the list.
+        if(employees != null && Hibernate.isInitialized(employees) && !employees.isEmpty()) {
+            List<Employee> _remainingChildren = wmGenericDao.execute(
+                session -> DaoUtils.findAllRemainingChildren(session, Employee.class,
+                        new DaoUtils.ChildrenFilter<>("department", department, employees)));
+            LOGGER.debug("Found {} detached children, deleting", _remainingChildren.size());
+            _remainingChildren.forEach(_employee -> employeeService.delete(_employee));
+            department.setEmployees(employees);
+        }
 
         return department;
     }

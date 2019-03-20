@@ -1,0 +1,37 @@
+{
+  "EmployeeVar" : {
+    "_id" : "wm-EmployeeVar-wm.Variable-1553075937136",
+    "name" : "EmployeeVar",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : {
+      "name" : "name0",
+      "age" : "12",
+      "address" : [ {
+        "street" : "S1"
+      }, {
+        "street" : "S2"
+      } ]
+    },
+    "type" : "entry",
+    "isList" : false,
+    "saveInPhonegap" : false
+  },
+  "staticVariable1" : {
+    "_id" : "wm-staticVariable1-wm.Variable-1553076049389",
+    "name" : "staticVariable1",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : {
+      "name" : "name0",
+      "age" : "12",
+      "text11" : "",
+      "text11_1" : ""
+    },
+    "type" : "entry",
+    "isList" : false,
+    "saveInPhonegap" : false
+  }
+}

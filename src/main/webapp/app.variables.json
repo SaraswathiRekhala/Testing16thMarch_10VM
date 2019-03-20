@@ -59,6 +59,39 @@
     "dataSet" : [ ],
     "pageTransitions" : "none"
   },
+  "goToPage_FormInsideList" : {
+    "_id" : "wm-goToPage_FormInsideList-wm.NavigationVariable-1553075728963",
+    "name" : "goToPage_FormInsideList",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "FormInsideList",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_FormStaticVariable" : {
+    "_id" : "wm-goToPage_FormStaticVariable-wm.NavigationVariable-1553061180710",
+    "name" : "goToPage_FormStaticVariable",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "FormStaticVariable",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_FormWidget" : {
+    "_id" : "wm-goToPage_FormWidget-wm.NavigationVariable-1553077012764",
+    "name" : "goToPage_FormWidget",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "FormWidget",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
   "goToPage_InspectCheck" : {
     "_id" : "wm-goToPage_InspectCheck-wm.NavigationVariable-1552744125887",
     "name" : "goToPage_InspectCheck",
@@ -67,6 +100,39 @@
     "dataBinding" : [ ],
     "operation" : "gotoPage",
     "pageName" : "InspectCheck",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_JavaServicePage" : {
+    "_id" : "wm-goToPage_JavaServicePage-wm.NavigationVariable-1553072718545",
+    "name" : "goToPage_JavaServicePage",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "JavaServicePage",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_ListInsideList" : {
+    "_id" : "wm-goToPage_ListInsideList-wm.NavigationVariable-1553064898615",
+    "name" : "goToPage_ListInsideList",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "ListInsideList",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_ListInsideLiveDiffSources" : {
+    "_id" : "wm-goToPage_ListInsideLiveDiffSources-wm.NavigationVariable-1553070499291",
+    "name" : "goToPage_ListInsideLiveDiffSources",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "ListInsideLiveDiffSources",
     "dataSet" : [ ],
     "pageTransitions" : "none"
   },

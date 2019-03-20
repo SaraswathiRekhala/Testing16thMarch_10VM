@@ -1,0 +1,7 @@
+{
+  "id" : "EmployeeAutowiring",
+  "type" : "JavaService",
+  "packageNames" : [ "com.testing16thmarch_10vm.employeeautowiring" ],
+  "serviceClassNames" : [ "com.testing16thmarch_10vm.employeeautowiring.EmployeeAutowiring" ],
+  "title" : "EmployeeAutowiring"
+}

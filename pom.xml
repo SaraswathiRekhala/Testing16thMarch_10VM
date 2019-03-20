@@ -20,6 +20,13 @@
             </resource>
             <resource>
                 <filtering>true</filtering>
+                <directory>services/EmployeeAutowiring/src</directory>
+                <excludes>
+                    <exclude>**/*.java</exclude>
+                </excludes>
+            </resource>
+            <resource>
+                <filtering>true</filtering>
                 <directory>services/MyJavaServiceAppEnv/src</directory>
                 <excludes>
                     <exclude>**/*.java</exclude>
@@ -63,6 +70,13 @@
             <resource>
                 <filtering>true</filtering>
                 <directory>services/securityService/src</directory>
+                <excludes>
+                    <exclude>**/*.java</exclude>
+                </excludes>
+            </resource>
+            <resource>
+                <filtering>true</filtering>
+                <directory>services/studio10/src</directory>
                 <excludes>
                     <exclude>**/*.java</exclude>
                 </excludes>
@@ -195,6 +209,7 @@
                         <configuration>
                             <sources>
                                 <source>services/DataLockingdb/src</source>
+                                <source>services/EmployeeAutowiring/src</source>
                                 <source>services/MyJavaServiceAppEnv/src</source>
                                 <source>services/WMSTUDIO/src</source>
                                 <source>services/allscenariosdb/src</source>
@@ -202,6 +217,7 @@
                                 <source>services/fda/src</source>
                                 <source>services/hrdb/src</source>
                                 <source>services/securityService/src</source>
+                                <source>services/studio10/src</source>
                             </sources>
                         </configuration>
                     </execution>

@@ -19,7 +19,31 @@
   "type" : "PAGE",
   "params" : [ ]
 }, {
+  "name" : "FormInsideList",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "FormStaticVariable",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "FormWidget",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
   "name" : "InspectCheck",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "JavaServicePage",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "ListInsideList",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "ListInsideLiveDiffSources",
   "type" : "PAGE",
   "params" : [ ]
 }, {
@@ -119,6 +143,13 @@
   "name" : "leftnav",
   "type" : "LEFTNAV",
   "params" : [ ]
+}, {
+  "name" : "partialEmployee",
+  "type" : "PARTIAL",
+  "params" : [ {
+    "name" : "deptId",
+    "type" : "integer"
+  } ]
 }, {
   "name" : "rightnav",
   "type" : "RIGHTNAV",

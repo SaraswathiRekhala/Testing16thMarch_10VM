@@ -9,7 +9,7 @@
   "dbType" : "HSQLDB",
   "host" : "localhost",
   "dbName" : "hrdb",
-  "port" : "",
+  "port" : null,
   "schemaName" : "PUBLIC",
   "tableFilter" : [ {
     "table" : "DEPARTMENT",
@@ -26,7 +26,7 @@
   } ],
   "schemaFilter" : [ ".*" ],
   "impersonateUser" : false,
-  "activeDirectoryDomain" : "",
+  "activeDirectoryDomain" : null,
   "hbm2ddl" : "none",
   "maxPageSize" : 100,
   "minPoolSize" : 2,

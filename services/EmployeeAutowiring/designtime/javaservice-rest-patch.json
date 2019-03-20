@@ -1,0 +1,46 @@
+{
+  "description" : null,
+  "methods" : {
+    "findAllEmployees" : [ {
+      "url" : {
+        "value" : "/findAllEmployees",
+        "modified" : false
+      },
+      "method" : {
+        "value" : "GET",
+        "modified" : false
+      },
+      "accessSpecifier" : "APP_ONLY",
+      "parameters" : {
+        "query" : {
+          "name" : {
+            "value" : "query",
+            "modified" : false
+          },
+          "in" : {
+            "value" : "QUERY",
+            "modified" : false
+          },
+          "required" : {
+            "value" : false,
+            "modified" : false
+          }
+        },
+        "pageable" : {
+          "name" : {
+            "value" : "pageable",
+            "modified" : false
+          },
+          "in" : {
+            "value" : "NONE",
+            "modified" : false
+          },
+          "required" : {
+            "value" : false,
+            "modified" : false
+          }
+        }
+      }
+    } ]
+  }
+}

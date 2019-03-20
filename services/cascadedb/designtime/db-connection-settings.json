@@ -1,0 +1,50 @@
+{
+  "username" : "postgres",
+  "password" : "7b6a43524a322c0c6e6166771a1378700d662158",
+  "url" : "jdbc:postgresql://3.80.171.45:5432/cascadedb",
+  "driverClass" : "org.postgresql.Driver",
+  "dialect" : "com.wavemaker.runtime.data.dialect.WMPostgresSQLDialect",
+  "serviceId" : "cascadedb",
+  "packageName" : "com.testing16thmarch_10vm.cascadedb",
+  "dbType" : "PostgreSQL",
+  "host" : "3.80.171.45",
+  "dbName" : "cascadedb",
+  "port" : "5432",
+  "schemaName" : "public",
+  "tableFilter" : [ {
+    "table" : "BYTE_UNIQUE_LOCKING",
+    "schema" : "public"
+  }, {
+    "table" : "PARENT_LOCKINIG",
+    "schema" : "public"
+  }, {
+    "table" : "CHILD_LOCKING",
+    "schema" : "public"
+  }, {
+    "table" : "TIMESTAMP_LOCK",
+    "schema" : "public"
+  }, {
+    "table" : "INT_LOCKING",
+    "schema" : "public"
+  }, {
+    "table" : "COMPOSITE_LOCKING",
+    "schema" : "public"
+  } ],
+  "schemaFilter" : [ "public" ],
+  "impersonateUser" : false,
+  "activeDirectoryDomain" : null,
+  "hbm2ddl" : "none",
+  "maxPageSize" : 100,
+  "minPoolSize" : 2,
+  "maxPoolSize" : 4,
+  "transactionTimeout" : 30,
+  "dataSourceType" : "WM_MANAGED_DATASOURCE",
+  "jndiName" : "",
+  "reloadInfo" : {
+    "reload" : false,
+    "reason" : null,
+    "message" : null,
+    "reImport" : false
+  },
+  "readOnly" : false
+}

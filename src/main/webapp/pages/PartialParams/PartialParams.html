@@ -1,0 +1,55 @@
+<wm-partial name="partial1">
+    <wm-composite name="composite1">
+        <wm-checkbox caption="Label" class="col-md-push-3 col-md-9" name="checkbox1" checkedvalue="true" uncheckedvalue="false" datavalue="bind:pageParams.booleanParam"></wm-checkbox>
+    </wm-composite>
+    <wm-composite name="composite2">
+        <wm-label class="col-md-3 control-label" name="label1"></wm-label>
+        <wm-container class="col-md-9" name="container1">
+            <wm-date name="date1" datavalue="bind:pageParams.dateParam"></wm-date>
+        </wm-container>
+    </wm-composite>
+    <wm-table editmode="inline" name="EmployeeTable1" title="Employee List" dataset="bind:Variables.HrdbEmployeeData.dataSet" navigation="Basic">
+        <wm-table-column binding="empId" caption="Emp Id" generator="identity" pcdisplay="true" mobiledisplay="true" type="integer" primary-key="true" readonly="true"></wm-table-column>
+        <wm-table-column binding="firstname" caption="Firstname" generator="assigned" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column>
+        <wm-table-column binding="lastname" caption="Lastname" generator="assigned" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column>
+        <wm-table-column binding="street" caption="Street" generator="assigned" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column>
+        <wm-table-column binding="city" caption="City" generator="assigned" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column>
+        <wm-table-column binding="state" caption="State" generator="assigned" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column>
+        <wm-table-column binding="zip" caption="Zip" generator="assigned" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column>
+        <wm-table-column binding="birthdate" caption="Birthdate" generator="assigned" pcdisplay="true" mobiledisplay="true" type="date"></wm-table-column>
+        <wm-table-column binding="picurl" caption="Picurl" generator="assigned" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column>
+        <wm-table-column binding="jobTitle" caption="Job Title" generator="assigned" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column>
+        <wm-table-column binding="username" caption="Username" generator="assigned" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column>
+        <wm-table-column binding="password" caption="Password" generator="assigned" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column>
+        <wm-table-column binding="role" caption="Role" generator="assigned" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column>
+        <wm-table-column binding="tenantId" caption="Tenant Id" generator="assigned" pcdisplay="true" mobiledisplay="true" type="integer"></wm-table-column>
+        <wm-table-column binding="department.deptId" caption="Dept Id" generator="identity" pcdisplay="true" mobiledisplay="true" type="integer" primary-key="true" related-entity-name="Department"></wm-table-column>
+        <wm-table-column binding="department.name" caption="Department Name" generator="assigned" pcdisplay="true" mobiledisplay="true" type="string" related-entity-name="Department" readonly="true"></wm-table-column>
+        <wm-table-column binding="department.budget" caption="Department Budget" generator="assigned" pcdisplay="true" mobiledisplay="true" type="integer" related-entity-name="Department" readonly="true"></wm-table-column>
+        <wm-table-column binding="department.q1" caption="Department Q1" generator="assigned" pcdisplay="true" mobiledisplay="true" type="integer" related-entity-name="Department" readonly="true"></wm-table-column>
+        <wm-table-column binding="department.q2" caption="Department Q2" generator="assigned" pcdisplay="true" mobiledisplay="true" type="integer" related-entity-name="Department" readonly="true"></wm-table-column>
+        <wm-table-column binding="department.q3" caption="Department Q3" generator="assigned" pcdisplay="true" mobiledisplay="true" type="integer" related-entity-name="Department" readonly="true"></wm-table-column>
+        <wm-table-column binding="department.q4" caption="Department Q4" generator="assigned" pcdisplay="true" mobiledisplay="true" type="integer" related-entity-name="Department" readonly="true"></wm-table-column>
+        <wm-table-column binding="department.deptCode" caption="Dept Code" generator="assigned" pcdisplay="true" mobiledisplay="true" type="string" related-entity-name="Department" readonly="true"></wm-table-column>
+        <wm-table-column binding="department.location" caption="Department Location" generator="assigned" pcdisplay="true" mobiledisplay="true" type="string" related-entity-name="Department" readonly="true"></wm-table-column>
+        <wm-table-column binding="department.tenantId" caption="Tenant Id" generator="assigned" pcdisplay="true" mobiledisplay="true" type="integer" related-entity-name="Department" readonly="true"></wm-table-column>
+        <wm-table-column binding="employeeByManagerId.empId" caption="Emp Id" generator="identity" pcdisplay="true" mobiledisplay="true" type="integer" primary-key="true" related-entity-name="Employee"></wm-table-column>
+        <wm-table-column binding="employeeByManagerId.firstname" caption="Id Firstname" generator="assigned" pcdisplay="true" mobiledisplay="true" type="string" related-entity-name="Employee" readonly="true"></wm-table-column>
+        <wm-table-column binding="employeeByManagerId.lastname" caption="Id Lastname" generator="assigned" pcdisplay="true" mobiledisplay="true" type="string" related-entity-name="Employee" readonly="true"></wm-table-column>
+        <wm-table-column binding="employeeByManagerId.street" caption="Id Street" generator="assigned" pcdisplay="true" mobiledisplay="true" type="string" related-entity-name="Employee" readonly="true"></wm-table-column>
+        <wm-table-column binding="employeeByManagerId.city" caption="Id City" generator="assigned" pcdisplay="true" mobiledisplay="true" type="string" related-entity-name="Employee" readonly="true"></wm-table-column>
+        <wm-table-column binding="employeeByManagerId.state" caption="Id State" generator="assigned" pcdisplay="true" mobiledisplay="true" type="string" related-entity-name="Employee" readonly="true"></wm-table-column>
+        <wm-table-column binding="employeeByManagerId.zip" caption="Id Zip" generator="assigned" pcdisplay="true" mobiledisplay="true" type="string" related-entity-name="Employee" readonly="true"></wm-table-column>
+        <wm-table-column binding="employeeByManagerId.birthdate" caption="Id Birthdate" generator="assigned" pcdisplay="true" mobiledisplay="true" type="date" related-entity-name="Employee" readonly="true"></wm-table-column>
+        <wm-table-column binding="employeeByManagerId.picurl" caption="Id Picurl" generator="assigned" pcdisplay="true" mobiledisplay="true" type="string" related-entity-name="Employee" readonly="true"></wm-table-column>
+        <wm-table-column binding="employeeByManagerId.jobTitle" caption="Job Title" generator="assigned" pcdisplay="true" mobiledisplay="true" type="string" related-entity-name="Employee" readonly="true"></wm-table-column>
+        <wm-table-column binding="employeeByManagerId.username" caption="Id Username" generator="assigned" pcdisplay="true" mobiledisplay="true" type="string" related-entity-name="Employee" readonly="true"></wm-table-column>
+        <wm-table-column binding="employeeByManagerId.password" caption="Id Password" generator="assigned" pcdisplay="true" mobiledisplay="true" type="string" related-entity-name="Employee" readonly="true"></wm-table-column>
+        <wm-table-column binding="employeeByManagerId.role" caption="Id Role" generator="assigned" pcdisplay="true" mobiledisplay="true" type="string" related-entity-name="Employee" readonly="true"></wm-table-column>
+        <wm-table-column binding="employeeByManagerId.tenantId" caption="Tenant Id" generator="assigned" pcdisplay="true" mobiledisplay="true" type="integer" related-entity-name="Employee" readonly="true"></wm-table-column>
+        <wm-table-column binding="employeeByManagerId.managerId" caption="Manager Id" generator="assigned" pcdisplay="true" mobiledisplay="true" type="integer" related-entity-name="Employee" readonly="true"></wm-table-column>
+        <wm-table-action widget-type="button" key="addNewRow" display-name="New" iconclass="wi wi-plus" show="true" class="btn-primary" action="addNewRow()" position="footer" shortcutkey=""></wm-table-action>
+        <wm-table-row-action key="updaterow" display-name="" title="Edit" iconclass="wi wi-pencil" show="true" class="btn-transparent" action="editRow($event)"></wm-table-row-action>
+        <wm-table-row-action key="deleterow" display-name="" title="Delete" iconclass="wi wi-trash" show="true" class="btn-transparent" action="deleteRow($event)"></wm-table-row-action>
+    </wm-table>
+</wm-partial>

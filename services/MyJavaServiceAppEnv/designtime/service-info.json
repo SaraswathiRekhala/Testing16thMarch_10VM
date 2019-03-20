@@ -1,0 +1,7 @@
+{
+  "id" : "MyJavaServiceAppEnv",
+  "type" : "JavaService",
+  "packageNames" : [ "com.testing16thmarch_10vm.myjavaserviceappenv" ],
+  "serviceClassNames" : [ "com.testing16thmarch_10vm.myjavaserviceappenv.MyJavaServiceAppEnv" ],
+  "title" : "MyJavaServiceAppEnv"
+}

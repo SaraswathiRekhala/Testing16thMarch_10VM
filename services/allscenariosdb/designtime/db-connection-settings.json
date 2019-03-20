@@ -1,0 +1,56 @@
+{
+  "username" : "sa",
+  "password" : "7b6a43524a353f3a664c733d4e537670477c612a43",
+  "url" : "jdbc:sqlserver://52.12.227.219:1433;databaseName=allscenariosdb",
+  "driverClass" : "com.microsoft.sqlserver.jdbc.SQLServerDriver",
+  "dialect" : "com.wavemaker.runtime.data.dialect.WMSQLServerDialect",
+  "serviceId" : "allscenariosdb",
+  "packageName" : "com.testing16thmarch_10vm.allscenariosdb",
+  "dbType" : "SQLServer",
+  "host" : "52.12.227.219",
+  "dbName" : "allscenariosdb",
+  "port" : "1433",
+  "schemaName" : "filter",
+  "tableFilter" : [ {
+    "table" : "DATEDATATYPES",
+    "schema" : "filter"
+  }, {
+    "table" : "INT_LOCKING",
+    "schema" : "filter"
+  }, {
+    "table" : "BLOBTABLE",
+    "schema" : "filter"
+  }, {
+    "table" : "MANY2ONE_C",
+    "schema" : "filter"
+  }, {
+    "table" : "SEQ_SHORT_TABLE",
+    "schema" : "filter"
+  }, {
+    "table" : "ONE2MANY_P",
+    "schema" : "filter"
+  }, {
+    "table" : "View_BlobTable",
+    "schema" : "filter"
+  }, {
+    "table" : "VPK_TABLE",
+    "schema" : "filter"
+  } ],
+  "schemaFilter" : [ "filter" ],
+  "impersonateUser" : false,
+  "activeDirectoryDomain" : null,
+  "hbm2ddl" : "none",
+  "maxPageSize" : 100,
+  "minPoolSize" : 2,
+  "maxPoolSize" : 4,
+  "transactionTimeout" : 30,
+  "dataSourceType" : "WM_MANAGED_DATASOURCE",
+  "jndiName" : "",
+  "reloadInfo" : {
+    "reload" : false,
+    "reason" : null,
+    "message" : null,
+    "reImport" : false
+  },
+  "readOnly" : false
+}

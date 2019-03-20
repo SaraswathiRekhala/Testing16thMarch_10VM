@@ -1,0 +1,55 @@
+<wm-page name="mainpage" pagetitle="Main">
+    <wm-header content="header" name="header" height="auto"></wm-header>
+    <wm-top-nav name="topnav" content="topnav"></wm-top-nav>
+    <wm-content name="content">
+        <wm-left-panel columnwidth="2" name="leftpanel" content="leftnav"></wm-left-panel>
+        <wm-page-content columnwidth="8" name="mainContent" padding="unset 15px">
+            <wm-search name="search1" dataset="bind:Variables.databaseVariable1.dataSet" searchkey="deptCode,location" displaylabel="deptCode" datafield="All Fields" matchmode="exact,startignorecase" type="autocomplete"></wm-search>
+            <wm-livetable name="IntVersioningLiveTable1">
+                <wm-table gridfirstrowselect="true" editmode="form" name="IntVersioningTable1" title="Int_versioning List" dataset="bind:Variables.DataLockingdbIntVersioningData.dataSet" navigation="Basic">
+                    <wm-table-column binding="id" caption="Id" generator="identity" pcdisplay="true" mobiledisplay="true" type="integer" primary-key="true" readonly="true"></wm-table-column>
+                    <wm-table-column binding="charcol" caption="Charcol" generator="assigned" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column>
+                    <wm-table-column binding="datecol" caption="Datecol" generator="assigned" pcdisplay="true" mobiledisplay="true" type="date"></wm-table-column>
+                    <wm-table-column binding="intversion" caption="Intversion" generator="assigned" pcdisplay="true" mobiledisplay="true" type="integer"></wm-table-column>
+                    <wm-table-action widget-type="button" key="addNewRow" display-name="New" iconclass="wi wi-plus" show="true" class="btn-primary" action="addNewRow()" position="footer" shortcutkey=""></wm-table-action>
+                    <wm-table-row-action key="updaterow" display-name="" title="Edit" iconclass="wi wi-pencil" show="true" class="btn-transparent" action="editRow($event)"></wm-table-row-action>
+                    <wm-table-row-action key="deleterow" display-name="" title="Delete" iconclass="wi wi-trash" show="true" class="btn-transparent" action="deleteRow($event)"></wm-table-row-action>
+                </wm-table>
+                <wm-liveform errormessage="" title="Int_versioning Info" formlayout="inline" iconclass="wi wi-edit" name="IntVersioningLiveForm1" dataset="bind:Variables.DataLockingdbIntVersioningData.dataSet" captionalign="left" captionposition="top">
+                    <wm-layoutgrid columns="3" name="layoutgrid2">
+                        <wm-gridrow name="gridrow3">
+                            <wm-gridcolumn columnwidth="4" name="gridcolumn5">
+                                <wm-form-field name="charcol" displayname="Charcol" required="false" show="true" generator="assigned" primary-key="false" key="charcol" type="string" is-related="false" maxchars="1" pc-display="true" mobile-display="true" widget="text"></wm-form-field>
+                            </wm-gridcolumn>
+                            <wm-gridcolumn columnwidth="4" name="gridcolumn6">
+                                <wm-form-field name="datecol" displayname="Datecol" required="false" show="true" generator="assigned" primary-key="false" key="datecol" type="date" is-related="false" pc-display="true" mobile-display="true" widget="date"></wm-form-field>
+                            </wm-gridcolumn>
+                            <wm-gridcolumn columnwidth="4" name="gridcolumn7">
+                                <wm-form-field name="intversion" displayname="Intversion" required="false" show="true" generator="assigned" primary-key="false" key="intversion" type="integer" is-related="false" step="0" pc-display="true" mobile-display="true"
+                                    widget="number"></wm-form-field>
+                            </wm-gridcolumn>
+                        </wm-gridrow>
+                    </wm-layoutgrid>
+                    <wm-form-field name="id" displayname="Id" required="true" show="false" generator="identity" primary-key="true" key="id" type="integer" is-related="false" step="0" pc-display="true" mobile-display="true" widget="number"></wm-form-field>
+                    <wm-form-action key="cancel" class="form-cancel btn-secondary" iconclass="wi wi-cancel" action="cancel()" display-name="Cancel" show="true" type="button" update-mode="true"></wm-form-action>
+                    <wm-form-action key="save" class="form-save btn-success" iconclass="wi wi-save" display-name="Save" show="true" type="submit" update-mode="true"></wm-form-action>
+                </wm-liveform>
+            </wm-livetable>
+            <wm-layoutgrid name="layoutgrid2_1">
+                <wm-gridrow name="gridrow2">
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn4">
+                        <wm-chart type="Pie" title="Pie Chart" height="250px" iconclass="wi wi-pie-chart" name="chart1" dataset="bind:Variables.databaseVariable1.dataSet" yaxisdatakey="deptId" xaxisdatakey="name" showlegend="top"></wm-chart>
+                    </wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn5_1"></wm-gridcolumn>
+                </wm-gridrow>
+                <wm-gridrow name="gridrow3_1">
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn6_1"></wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn7_1"></wm-gridcolumn>
+                </wm-gridrow>
+            </wm-layoutgrid>
+            <wm-prefab prefabname="TwoWayBindingPrefab" name="TwoWayBindingPrefab1"></wm-prefab>
+        </wm-page-content>
+        <wm-right-panel columnwidth="2" name="rightpanel" content="rightnav"></wm-right-panel>
+    </wm-content>
+    <wm-footer name="footer" content="footer"></wm-footer>
+</wm-page>

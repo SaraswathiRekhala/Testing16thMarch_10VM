@@ -1,0 +1,79 @@
+{
+  "SV_UserDataAppEnv" : {
+    "name" : "SV_UserDataAppEnv",
+    "description" : "SV_UserDataAppEnv",
+    "version" : "V2",
+    "queryString" : "select * from USER where USERNAME=:uname",
+    "countQueryString" : "select count(*) from (select * from USER where USERNAME=:uname) wmTempTable",
+    "offlineQueryString" : null,
+    "nativeSql" : true,
+    "fetchCount" : true,
+    "type" : "SELECT",
+    "parameters" : [ {
+      "name" : "uname",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "APP_ENVIRONMENT",
+      "variableName" : "usernameKey",
+      "testValue" : "admin",
+      "required" : true
+    } ],
+    "request" : {
+      "wrapped" : false,
+      "typeRef" : null,
+      "method" : "GET"
+    },
+    "identifiers" : [ ],
+    "response" : {
+      "typeRef" : "com.testing16thmarch_10vm.hrdb.models.query.SvUserDataAppEnvResponse",
+      "returns" : "CUSTOM",
+      "responseType" : "PAGINATED",
+      "properties" : [ {
+        "name" : "USER_ID",
+        "fieldName" : "userId",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.math.BigInteger",
+          "list" : false
+        }
+      }, {
+        "name" : "USERNAME",
+        "fieldName" : "username",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.String",
+          "list" : false
+        }
+      }, {
+        "name" : "PASSWORD",
+        "fieldName" : "password",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.String",
+          "list" : false
+        }
+      }, {
+        "name" : "ROLE",
+        "fieldName" : "role",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.String",
+          "list" : false
+        }
+      }, {
+        "name" : "TENANT_ID",
+        "fieldName" : "tenantId",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.math.BigInteger",
+          "list" : false
+        }
+      } ]
+    }
+  }
+}

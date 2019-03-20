@@ -1,0 +1,112 @@
+{
+  "basePath" : "${fda.basepath}",
+  "paths" : {
+    "/event.json" : {
+      "x-WM-BASE_PATH" : "/event.json",
+      "x-WM-TAG" : "RestServiceVirtualController",
+      "x-WM-RELATIVE_PATH" : "",
+      "get" : {
+        "x-WM-METHOD_NAME" : "invoke",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY",
+        "produces" : [ "application/json" ],
+        "operationId" : "fda_RestServiceVirtualController-invoke",
+        "responses" : {
+          "200" : {
+            "schema" : {
+              "$ref" : "#/definitions/RootResponse"
+            },
+            "description" : "Success"
+          }
+        },
+        "parameters" : [ {
+          "x-WM-EDITABLE" : false,
+          "in" : "query",
+          "name" : "search",
+          "format" : "string",
+          "description" : "search",
+          "type" : "string",
+          "required" : false
+        }, {
+          "x-WM-EDITABLE" : false,
+          "in" : "query",
+          "name" : "count",
+          "format" : "string",
+          "description" : "count",
+          "type" : "string",
+          "required" : false
+        } ],
+        "tags" : [ "RestServiceVirtualController" ],
+        "consumes" : [ "application/json" ]
+      },
+      "x-WM-COMPLETE_PATH" : "${fda.scheme}://${fda.host}${fda.basepath}/event.json"
+    }
+  },
+  "host" : "${fda.host}",
+  "schemes" : [ "${fda.scheme}" ],
+  "definitions" : {
+    "meta" : {
+      "x-WM-FULLY_QUALIFIED_NAME" : "fda.meta",
+      "x-WM-TAGS" : [ "RestServiceVirtualController" ],
+      "required" : [ "disclaimer", "last_updated", "license", "terms" ],
+      "properties" : {
+        "license" : {
+          "type" : "string"
+        },
+        "last_updated" : {
+          "type" : "string"
+        },
+        "terms" : {
+          "type" : "string"
+        },
+        "disclaimer" : {
+          "type" : "string"
+        }
+      }
+    },
+    "resultsEntryItem" : {
+      "x-WM-FULLY_QUALIFIED_NAME" : "fda.resultsEntryItem",
+      "x-WM-TAGS" : [ "RestServiceVirtualController" ],
+      "required" : [ "count", "term" ],
+      "properties" : {
+        "count" : {
+          "format" : "int32",
+          "type" : "integer"
+        },
+        "term" : {
+          "type" : "string"
+        }
+      }
+    },
+    "RootResponse" : {
+      "x-WM-FULLY_QUALIFIED_NAME" : "fda.RootResponse",
+      "x-WM-TAGS" : [ "RestServiceVirtualController" ],
+      "required" : [ "meta", "results" ],
+      "properties" : {
+        "meta" : {
+          "$ref" : "#/definitions/meta"
+        },
+        "results" : {
+          "x-WM-IS_LIST" : true,
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/resultsEntryItem"
+          }
+        }
+      }
+    }
+  },
+  "swagger" : "2.0",
+  "info" : {
+    "x-WM-USE_PROXY_FOR_WEB" : false,
+    "x-WM-USE_PROXY_FOR_MOBILE" : false,
+    "x-WM-API_ID" : "602dd8fc-84cd-4809-95dc-95a71f12d8d0",
+    "x-WM-SERVICE_ID" : "fda",
+    "version" : "2.0",
+    "x-WM-SERVICE_TYPE" : "RestService",
+    "x-WM-USE_WITH_CREDENTIALS" : false
+  },
+  "tags" : [ {
+    "name" : "RestServiceVirtualController",
+    "description" : "Rest service swagger documentation"
+  } ]
+}

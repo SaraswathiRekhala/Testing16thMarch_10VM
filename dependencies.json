@@ -1,0 +1,11 @@
+[ {
+  "name" : "vermillion",
+  "version" : "3.8",
+  "artifactType" : "THEME",
+  "artifactDependencyList" : null
+}, {
+  "name" : "TwoWayBindingPrefab",
+  "version" : "1.2",
+  "artifactType" : "PREFAB",
+  "artifactDependencyList" : null
+} ]

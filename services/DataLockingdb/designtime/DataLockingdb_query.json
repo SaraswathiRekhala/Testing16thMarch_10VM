@@ -1,0 +1,41 @@
+{
+  "SV_UpdateVersion" : {
+    "name" : "SV_UpdateVersion",
+    "description" : "SV_UpdateVersion",
+    "version" : "V2",
+    "queryString" : "update INT_VERSIONING set CHARCOL=:charcol, DATECOL=:datecol where ID=4",
+    "countQueryString" : null,
+    "offlineQueryString" : null,
+    "nativeSql" : true,
+    "fetchCount" : false,
+    "type" : "UPDATE",
+    "parameters" : [ {
+      "name" : "charcol",
+      "type" : "character",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : "",
+      "testValue" : "R",
+      "required" : true
+    }, {
+      "name" : "datecol",
+      "type" : "date",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : "",
+      "testValue" : "2019-03-16",
+      "required" : true
+    } ],
+    "request" : {
+      "wrapped" : true,
+      "typeRef" : "com.testing16thmarch_10vm.datalockingdb.models.query.SvUpdateVersionRequest",
+      "method" : "PUT"
+    },
+    "identifiers" : [ ],
+    "response" : {
+      "typeRef" : "java.lang.Integer",
+      "returns" : "ENTITY",
+      "responseType" : "SINGLE"
+    }
+  }
+}

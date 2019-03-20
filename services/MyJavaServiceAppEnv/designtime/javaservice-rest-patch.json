@@ -1,0 +1,17 @@
+{
+  "description" : null,
+  "methods" : {
+    "getUsername" : [ {
+      "url" : {
+        "value" : "/username",
+        "modified" : false
+      },
+      "method" : {
+        "value" : "GET",
+        "modified" : false
+      },
+      "accessSpecifier" : "APP_ONLY",
+      "parameters" : { }
+    } ]
+  }
+}

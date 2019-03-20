@@ -1,0 +1,25 @@
+<wm-partial name="partial1">
+    <wm-table editmode="inline" name="EmployeeHugeRecordsTable1" title="Employee_huge_records List" dataset="bind:Variables.WMSTUDIOEmployeeHugeRecordsData.dataSet" navigation="Basic" exportformat="EXCEL,CSV">
+        <wm-table-column binding="empid" caption="Empid" primary-key="true" edit-widget-type="number" type="integer" generator="assigned" show="true" readonly="false" required="true"></wm-table-column>
+        <wm-table-column binding="firstname" caption="Firstname" edit-widget-type="text" type="string" generator="assigned" show="true" readonly="false"></wm-table-column>
+        <wm-table-column binding="lastname" caption="Lastname" edit-widget-type="text" type="string" generator="assigned" show="true" readonly="false"></wm-table-column>
+        <wm-table-column binding="street" caption="Street" edit-widget-type="text" type="string" generator="assigned" show="true" readonly="false"></wm-table-column>
+        <wm-table-column binding="city" caption="City" edit-widget-type="text" type="string" generator="assigned" show="true" readonly="false"></wm-table-column>
+        <wm-table-column binding="state" caption="State" edit-widget-type="text" type="string" generator="assigned" show="true" readonly="false"></wm-table-column>
+        <wm-table-column binding="postcode" caption="Postcode" edit-widget-type="text" type="string" generator="assigned" show="true" readonly="false"></wm-table-column>
+        <wm-table-column binding="gender" caption="Gender" edit-widget-type="text" type="string" generator="assigned" show="true" readonly="false"></wm-table-column>
+        <wm-table-column binding="email" caption="Email" edit-widget-type="text" type="string" generator="assigned" show="true" readonly="false"></wm-table-column>
+        <wm-table-column binding="username" caption="Username" edit-widget-type="text" type="string" generator="assigned" show="true" readonly="false"></wm-table-column>
+        <wm-table-column binding="password" caption="Password" edit-widget-type="text" type="string" generator="assigned" show="true" readonly="false"></wm-table-column>
+        <wm-table-column binding="phone" caption="Phone" edit-widget-type="text" type="string" generator="assigned" show="true" readonly="false"></wm-table-column>
+        <wm-table-column binding="nationality" caption="Nationality" edit-widget-type="text" type="string" generator="assigned" show="true" readonly="false"></wm-table-column>
+        <wm-table-column binding="picurl" caption="Picurl" widget-type="anchor" edit-widget-type="upload" type="blob" generator="assigned" searchable="false" show="true" readonly="false">
+            <wm-anchor caption="" hyperlink="bind:row.getProperty('picurl')" target="_blank" iconclass="wm-icon wm-icon24 wi wi-file" class="col-md-9" show="bind:row.getProperty('picurl')!= null"></wm-anchor>
+        </wm-table-column>
+        <wm-table-column binding="dateofbirth" caption="Dateofbirth" edit-widget-type="datetime" type="datetime" generator="assigned" show="true" readonly="false"></wm-table-column>
+        <wm-table-column binding="rowOperations" caption="Actions" width="120px" type="custom" readonly="true" sortable="false" searchable="false" show="true"></wm-table-column>
+        <wm-table-action key="addNewRow" display-name="New" show="true" class="btn-primary" iconclass="wi wi-plus" title="New" action="addNewRow()" shortcutkey="" disabled="false" widget-type="button"></wm-table-action>
+        <wm-table-row-action key="updaterow" display-name="" show="true" class="btn-transparent" iconclass="wi wi-pencil" title="Edit" action="editRow($event)" disabled="false" widget-type="button"></wm-table-row-action>
+        <wm-table-row-action key="deleterow" display-name="" show="true" class="btn-transparent" iconclass="wi wi-trash" title="Delete" action="deleteRow($event)" disabled="false" widget-type="button"></wm-table-row-action>
+    </wm-table>
+</wm-partial>

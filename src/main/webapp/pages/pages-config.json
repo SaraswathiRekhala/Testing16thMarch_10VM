@@ -1,0 +1,130 @@
+[ {
+  "name" : "AllTypesLocking",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "AppEnv_Data",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "COMPOSITE_LOCKING",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "Common",
+  "type" : "PARTIAL",
+  "params" : [ ]
+}, {
+  "name" : "ExportToExcelCSV",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "InspectCheck",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "ListPage",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "Login",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "Main",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "OracleLocking",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "PageOnLeaveEvent",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "PageParam2",
+  "type" : "PAGE",
+  "params" : [ {
+    "name" : "deptId",
+    "type" : "integer"
+  }, {
+    "name" : "booleanField",
+    "type" : "boolean"
+  }, {
+    "name" : "dateField",
+    "type" : "date"
+  } ]
+}, {
+  "name" : "PageParams",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "PartialPage",
+  "type" : "PARTIAL",
+  "params" : [ {
+    "name" : "street",
+    "type" : "string"
+  } ]
+}, {
+  "name" : "PartialPageParams",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "PartialParams",
+  "type" : "PARTIAL",
+  "params" : [ {
+    "name" : "departmentId",
+    "type" : "integer"
+  }, {
+    "name" : "booleanParam",
+    "type" : "boolean"
+  }, {
+    "name" : "dateParam",
+    "type" : "date"
+  } ]
+}, {
+  "name" : "ReferenceLocking",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "SqlServer_TwoWayBinding",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "TwoWayBinding",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "TwoWayBindingFormList",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "UNIQUE_LOCKING",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "UpdateVersion",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "footer",
+  "type" : "FOOTER",
+  "params" : [ ]
+}, {
+  "name" : "header",
+  "type" : "HEADER",
+  "params" : [ ]
+}, {
+  "name" : "leftnav",
+  "type" : "LEFTNAV",
+  "params" : [ ]
+}, {
+  "name" : "rightnav",
+  "type" : "RIGHTNAV",
+  "params" : [ ]
+}, {
+  "name" : "topnav",
+  "type" : "TOPNAV",
+  "params" : [ ]
+} ]

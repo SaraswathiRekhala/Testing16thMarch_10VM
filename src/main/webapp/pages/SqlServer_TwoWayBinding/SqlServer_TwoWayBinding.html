@@ -1,0 +1,43 @@
+<wm-page pagetitle="Sql Server Two Way Binding" name="page1">
+    <wm-header content="header" name="header1"></wm-header>
+    <wm-top-nav content="topnav" name="top_nav1"></wm-top-nav>
+    <wm-content name="content1">
+        <wm-left-panel columnwidth="2" content="leftnav" name="left_panel1"></wm-left-panel>
+        <wm-page-content columnwidth="10" name="page_content1">
+            <wm-livetable name="IntLockingLiveTable1">
+                <wm-table gridfirstrowselect="true" editmode="form" name="IntLockingTable1" title="Int_locking List" dataset="bind:Variables.AllscenariosdbIntLockingData.dataSet" navigation="Basic">
+                    <wm-table-column binding="id" caption="Id" generator="identity" pcdisplay="true" mobiledisplay="true" type="integer" primary-key="true" readonly="true"></wm-table-column>
+                    <wm-table-column binding="stringcol" caption="Stringcol" generator="assigned" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column>
+                    <wm-table-column binding="datecol" caption="Datecol" generator="assigned" pcdisplay="true" mobiledisplay="true" type="date"></wm-table-column>
+                    <wm-table-column binding="version" caption="Version" generator="assigned" pcdisplay="true" mobiledisplay="true" type="integer"></wm-table-column>
+                    <wm-table-action widget-type="button" key="addNewRow" display-name="New" iconclass="wi wi-plus" show="true" class="btn-primary" action="addNewRow()" position="footer" shortcutkey=""></wm-table-action>
+                    <wm-table-row-action key="updaterow" display-name="" title="Edit" iconclass="wi wi-pencil" show="true" class="btn-transparent" action="editRow($event)"></wm-table-row-action>
+                    <wm-table-row-action key="deleterow" display-name="" title="Delete" iconclass="wi wi-trash" show="true" class="btn-transparent" action="deleteRow($event)"></wm-table-row-action>
+                </wm-table>
+                <wm-liveform errormessage="" title="Int_locking Info" formlayout="inline" iconclass="wi wi-edit" name="IntLockingLiveForm1" dataset="bind:Variables.AllscenariosdbIntLockingData.dataSet" captionalign="left" captionposition="top">
+                    <wm-layoutgrid columns="2" name="layoutgrid2">
+                        <wm-gridrow name="gridrow2">
+                            <wm-gridcolumn columnwidth="6" name="gridcolumn3">
+                                <wm-form-field name="stringcol" displayname="Stringcol" required="false" show="true" generator="assigned" primary-key="false" key="stringcol" type="string" is-related="false" maxchars="255" pc-display="true" mobile-display="true"
+                                    widget="text"></wm-form-field>
+                            </wm-gridcolumn>
+                            <wm-gridcolumn columnwidth="6" name="gridcolumn4">
+                                <wm-form-field name="datecol" displayname="Datecol" required="false" show="true" generator="assigned" primary-key="false" key="datecol" type="date" is-related="false" pc-display="true" mobile-display="true" widget="date"></wm-form-field>
+                            </wm-gridcolumn>
+                        </wm-gridrow>
+                        <wm-gridrow name="gridrow3">
+                            <wm-gridcolumn columnwidth="6" name="gridcolumn5">
+                                <wm-form-field name="version" displayname="Version" required="false" show="true" generator="assigned" primary-key="false" key="version" type="integer" is-related="false" step="0" pc-display="true" mobile-display="true" widget="number"></wm-form-field>
+                            </wm-gridcolumn>
+                            <wm-gridcolumn columnwidth="6" name="gridcolumn6"></wm-gridcolumn>
+                        </wm-gridrow>
+                    </wm-layoutgrid>
+                    <wm-form-field name="id" displayname="Id" required="true" show="false" generator="identity" primary-key="true" key="id" type="integer" is-related="false" step="0" pc-display="true" mobile-display="true" widget="number"></wm-form-field>
+                    <wm-form-action key="cancel" class="form-cancel btn-secondary" iconclass="wi wi-cancel" action="cancel()" display-name="Cancel" show="true" type="button" update-mode="true"></wm-form-action>
+                    <wm-form-action key="save" class="form-save btn-success" iconclass="wi wi-save" display-name="Save" show="true" type="submit" update-mode="true"></wm-form-action>
+                </wm-liveform>
+            </wm-livetable>
+        </wm-page-content>
+    </wm-content>
+    <wm-footer content="footer" name="footer1"></wm-footer>
+</wm-page>

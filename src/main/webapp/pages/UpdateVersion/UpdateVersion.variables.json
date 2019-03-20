@@ -1,0 +1,25 @@
+{
+  "DataLockingdbExecuteSV_UpdateVersion" : {
+    "_id" : "wm-DataLockingdbExecuteSV_UpdateVersion-wm.ServiceVariable-1552740830504",
+    "name" : "DataLockingdbExecuteSV_UpdateVersion",
+    "owner" : "Page",
+    "category" : "wm.ServiceVariable",
+    "dataBinding" : [ ],
+    "type" : "com.wavemaker.commons.wrapper.IntegerWrapper",
+    "service" : "DataLockingdb",
+    "operation" : "executeSV_UpdateVersion",
+    "operationId" : "QueryExecutionController_executeSV_UpdateVersion",
+    "operationType" : "put",
+    "serviceType" : "DataService",
+    "dataSet" : [ ],
+    "isList" : false,
+    "maxResults" : 20,
+    "startUpdate" : false,
+    "autoUpdate" : true,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "saveInPhonegap" : false,
+    "isDefault" : true,
+    "controller" : "QueryExecution"
+  }
+}

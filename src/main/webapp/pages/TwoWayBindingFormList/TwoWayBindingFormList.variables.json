@@ -1,0 +1,80 @@
+{
+  "staticVariableEMployeeInfo" : {
+    "_id" : "wm-staticVariableEMployeeInfo-wm.Variable-1552897065521",
+    "name" : "staticVariableEMployeeInfo",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : {
+      "empId" : "",
+      "firstname" : "",
+      "lastname" : "",
+      "email" : "",
+      "phone" : "",
+      "Address" : [ {
+        "HNo" : "1111",
+        "Street" : "S1",
+        "Area" : "A1",
+        "State" : "ST1",
+        "Country" : "C1",
+        "Pincode" : "11"
+      }, {
+        "HNo" : "2222",
+        "Street" : "S2",
+        "Area" : "A2",
+        "State" : "ST2",
+        "Country" : "C2",
+        "Pincode" : "22"
+      }, {
+        "HNo" : "3333",
+        "Street" : "S3",
+        "Area" : "A3",
+        "State" : "ST3",
+        "Country" : "C3",
+        "Pincode" : "33"
+      } ]
+    },
+    "type" : "entry",
+    "isList" : false,
+    "saveInPhonegap" : false
+  },
+  "staticVariableEmployeeInfo1" : {
+    "_id" : "wm-staticVariableEmployeeInfo1-wm.Variable-1552897112157",
+    "name" : "staticVariableEmployeeInfo1",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : {
+      "empId" : "",
+      "firstname" : "",
+      "lastname" : "",
+      "email" : "",
+      "phone" : "",
+      "Address" : [ {
+        "HNo" : "1111",
+        "Street" : "S1",
+        "Area" : "A1",
+        "State" : "ST1",
+        "Country" : "C1",
+        "Pincode" : "11"
+      }, {
+        "HNo" : "2222",
+        "Street" : "S2",
+        "Area" : "A2",
+        "State" : "ST2",
+        "Country" : "C2",
+        "Pincode" : "22"
+      }, {
+        "HNo" : "3333",
+        "Street" : "S3",
+        "Area" : "A3",
+        "State" : "ST3",
+        "Country" : "C3",
+        "Pincode" : "33"
+      } ]
+    },
+    "type" : "entry",
+    "isList" : false,
+    "saveInPhonegap" : false
+  }
+}

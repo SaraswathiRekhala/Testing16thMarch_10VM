@@ -1,0 +1,25 @@
+{
+  "HrdbCreateUser" : {
+    "_id" : "wm-HrdbCreateUser-wm.ServiceVariable-1552887505157",
+    "name" : "HrdbCreateUser",
+    "owner" : "Page",
+    "category" : "wm.ServiceVariable",
+    "dataBinding" : [ ],
+    "type" : "com.testing16thmarch_10vm.hrdb.User",
+    "service" : "hrdb",
+    "operation" : "createUser",
+    "operationId" : "UserController_createUser",
+    "operationType" : "post",
+    "serviceType" : "DataService",
+    "dataSet" : [ ],
+    "isList" : false,
+    "maxResults" : 20,
+    "startUpdate" : false,
+    "autoUpdate" : true,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "saveInPhonegap" : false,
+    "isDefault" : true,
+    "controller" : "User"
+  }
+}

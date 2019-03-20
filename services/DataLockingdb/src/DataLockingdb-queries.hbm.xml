@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <sql-query name="SV_UpdateVersion">
+        <![CDATA[
+        update INT_VERSIONING set CHARCOL=:charcol, DATECOL=:datecol where ID=4
+        ]]>
+    <query-param name="charcol" type="java.lang.Character"/>
+    <query-param name="datecol" type="java.sql.Date"/>
+    </sql-query>
+</hibernate-mapping>

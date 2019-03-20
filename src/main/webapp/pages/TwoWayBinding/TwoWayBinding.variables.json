@@ -1,0 +1,112 @@
+{
+  "staticVariableUsingForm" : {
+    "_id" : "wm-staticVariableUsingForm-wm.Variable-1552883287036",
+    "name" : "staticVariableUsingForm",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : {
+      "userId" : 1,
+      "username" : "admin",
+      "password" : "admin",
+      "role" : "adminrole",
+      "tenantId" : 1
+    },
+    "type" : "entry",
+    "isList" : false,
+    "saveInPhonegap" : false
+  },
+  "staticVariableUsingForm1" : {
+    "_id" : "wm-staticVariableUsingForm1-wm.Variable-1552883315405",
+    "name" : "staticVariableUsingForm1",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : {
+      "username" : "",
+      "password" : ""
+    },
+    "type" : "entry",
+    "isList" : false,
+    "saveInPhonegap" : false
+  },
+  "staticVariableUsingListForm" : {
+    "_id" : "wm-staticVariableUsingListForm-wm.Variable-1552898724457",
+    "name" : "staticVariableUsingListForm",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : [ {
+      "empId" : 1,
+      "name" : "Eric"
+    }, {
+      "empId" : 2,
+      "name" : "Brad"
+    }, {
+      "empId" : 3,
+      "name" : "Amanda"
+    }, {
+      "empId" : 4,
+      "name" : "Sally"
+    }, {
+      "empId" : 5,
+      "name" : "Jane"
+    } ],
+    "type" : "entry",
+    "isList" : true,
+    "saveInPhonegap" : false
+  },
+  "staticVariableUsingListForm1" : {
+    "_id" : "wm-staticVariableUsingListForm1-wm.Variable-1552898769120",
+    "name" : "staticVariableUsingListForm1",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : {
+      "name" : "",
+      "age" : ""
+    },
+    "type" : "entry",
+    "isList" : false,
+    "saveInPhonegap" : false
+  },
+  "staticVariableWithList" : {
+    "_id" : "wm-staticVariable1-wm.Variable-1552882878771",
+    "name" : "staticVariableWithList",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : [ {
+      "empId" : 1,
+      "name" : "Eric"
+    }, {
+      "empId" : 2,
+      "name" : "Brad"
+    }, {
+      "empId" : 3,
+      "name" : "Amanda"
+    }, {
+      "empId" : 4,
+      "name" : "Sally"
+    }, {
+      "empId" : 5,
+      "name" : "Jane"
+    } ],
+    "type" : "entry",
+    "isList" : true,
+    "saveInPhonegap" : false
+  },
+  "staticVariableWithText" : {
+    "_id" : "wm-staticVariableWithText-wm.Variable-1552883096252",
+    "name" : "staticVariableWithText",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : {
+      "dataValue" : ""
+    },
+    "type" : "string",
+    "isList" : false,
+    "saveInPhonegap" : false
+  }
+}

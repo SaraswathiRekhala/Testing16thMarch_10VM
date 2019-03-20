@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <sql-query name="SV_UserDataAppEnv">
+        <![CDATA[
+        select * from USER where USERNAME=:APP_ENVIRONMENT__usernameKey__uname
+        ]]>
+    <query-param name="APP_ENVIRONMENT__usernameKey__uname" type="java.lang.String"/>
+    </sql-query>
+
+    <sql-query name="SV_UserDataAppEnv__count">
+        <![CDATA[
+        select count(*) from (select * from USER where USERNAME=:APP_ENVIRONMENT__usernameKey__uname) wmTempTable
+        ]]>
+    <query-param name="APP_ENVIRONMENT__usernameKey__uname" type="java.lang.String"/>
+    </sql-query>
+</hibernate-mapping>

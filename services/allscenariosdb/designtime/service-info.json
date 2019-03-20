@@ -1,0 +1,6 @@
+{
+  "id" : "allscenariosdb",
+  "type" : "DataService",
+  "packageNames" : [ "com.testing16thmarch_10vm" ],
+  "title" : "allscenariosdb"
+}

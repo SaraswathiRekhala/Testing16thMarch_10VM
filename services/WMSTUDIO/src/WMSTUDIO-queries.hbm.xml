@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <sql-query name="SV_EmpHugeData">
+        <![CDATA[
+        select * from SARASWATHI.EMPLOYEE_HUGE_RECORDS
+        ]]>
+    </sql-query>
+
+    <sql-query name="SV_EmpHugeData__count">
+        <![CDATA[
+        select count(*) from (select * from SARASWATHI.EMPLOYEE_HUGE_RECORDS) wmTempTable
+        ]]>
+    </sql-query>
+
+    <sql-query name="SV_EmpHugeData__identifier">
+        <![CDATA[
+        select * from (select * from SARASWATHI.EMPLOYEE_HUGE_RECORDS) wmTempTable where "EMPID"=:empid
+        ]]>
+    <query-param name="empid" type="java.lang.Integer"/>
+    </sql-query>
+</hibernate-mapping>

@@ -1,0 +1,108 @@
+<wm-page pagetitle="Static Var" name="page1">
+    <wm-header content="header" name="header1"></wm-header>
+    <wm-top-nav content="topnav" name="top_nav1"></wm-top-nav>
+    <wm-content name="content1">
+        <wm-left-panel columnwidth="2" content="leftnav" name="left_panel1"></wm-left-panel>
+        <wm-page-content columnwidth="10" name="page_content1">
+            <wm-tabs name="tabs1">
+                <wm-tabpane name="tabpane1" title="Two-Way binding using list">
+                    <wm-list listclass="list-group" itemclass="list-group-item" template="true" itemsperrow="xs-1 sm-1 md-1 lg-1" class="media-list" name="staticVariable1List1" dataset="bind:Variables.staticVariableWithList.dataSet" navigation="Basic">
+                        <wm-listtemplate layout="inline" name="listtemplate1">
+                            <wm-container class="media-left" name="container1">
+                                <wm-picture width="32pt" height="32pt" name="Picture" shape="circle" class="media-object"></wm-picture>
+                            </wm-container>
+                            <wm-container class="media-body" padding="unset unset unset 1.25em" name="container2">
+                                <wm-label name="Name" class="p media-heading" caption="bind:Variables.staticVariableWithList.dataSet.empId" fontsize="1.143" fontunit="em"></wm-label>
+                                <wm-label name="JobTitle" caption="bind:Variables.staticVariableWithList.dataSet.name" class="p text-muted"></wm-label>
+                                <wm-composite name="composite1">
+                                    <wm-label class="col-md-3 control-label" name="label3"></wm-label>
+                                    <wm-container class="col-md-9" name="container4">
+                                        <wm-text name="text1" datavalue="bind:Variables.staticVariableWithList.dataSet[$i].name"></wm-text>
+                                    </wm-container>
+                                </wm-composite>
+                            </wm-container>
+                            <wm-container class="media-right media-top" name="container3">
+                                <wm-button class="btn-transparent" iconclass="wi wi-share fa-2x" name="button1"></wm-button>
+                            </wm-container>
+                        </wm-listtemplate>
+                    </wm-list>
+                </wm-tabpane>
+                <wm-tabpane name="tabpane2" title="Two-way binding using text">
+                    <wm-composite name="composite2">
+                        <wm-label class="col-md-3 control-label" name="label4" caption="bind:Variables.staticVariableWithText.dataSet.dataValue"></wm-label>
+                        <wm-container class="col-md-9" name="container5">
+                            <wm-text name="text2" datavalue="bind:Variables.staticVariableWithText.dataSet.dataValue"></wm-text>
+                        </wm-container>
+                    </wm-composite>
+                </wm-tabpane>
+                <wm-tabpane name="tabpane3" title="Two-Way binding using Form">
+                    <wm-form errormessage="" captionposition="top" title="Form" enctype="application/x-www-form-urlencoded" method="post" dataset="bind:Variables.staticVariableUsingForm.dataSet" captionalign="left" name="staticVariableUsingFormForm1" formdata="bind:Variables.staticVariableUsingForm1.dataSet">
+                        <wm-layoutgrid columns="1" name="layoutgrid1">
+                            <wm-gridrow name="gridrow1">
+                                <wm-gridcolumn columnwidth="12" name="gridcolumn1">
+                                    <wm-form-field readonly="false" name="userId" displayname="User Id" key="userId" type="string" show="true" widget="text"></wm-form-field>
+                                </wm-gridcolumn>
+                            </wm-gridrow>
+                            <wm-gridrow name="gridrow2">
+                                <wm-gridcolumn columnwidth="12" name="gridcolumn2">
+                                    <wm-form-field readonly="false" name="username" displayname="Username" key="username" type="string" show="true" widget="text"></wm-form-field>
+                                </wm-gridcolumn>
+                            </wm-gridrow>
+                            <wm-gridrow name="gridrow3">
+                                <wm-gridcolumn columnwidth="12" name="gridcolumn3">
+                                    <wm-form-field readonly="false" name="password" displayname="Password" key="password" type="string" show="true" widget="text"></wm-form-field>
+                                </wm-gridcolumn>
+                            </wm-gridrow>
+                            <wm-gridrow name="gridrow4">
+                                <wm-gridcolumn columnwidth="12" name="gridcolumn4">
+                                    <wm-form-field readonly="false" name="role" displayname="Role" key="role" type="string" show="true" widget="text"></wm-form-field>
+                                </wm-gridcolumn>
+                            </wm-gridrow>
+                            <wm-gridrow name="gridrow5">
+                                <wm-gridcolumn columnwidth="12" name="gridcolumn5">
+                                    <wm-form-field readonly="false" name="tenantId" displayname="Tenant Id" key="tenantId" type="string" show="true" widget="text"></wm-form-field>
+                                </wm-gridcolumn>
+                            </wm-gridrow>
+                        </wm-layoutgrid>
+                        <wm-form-action key="reset" class="form-reset btn-secondary" iconclass="wi wi-refresh" display-name="Reset" type="reset"></wm-form-action>
+                        <wm-form-action key="save" class="form-save btn-success" iconclass="wi wi-save" display-name="Save" type="submit"></wm-form-action>
+                    </wm-form>
+                    <wm-label padding="unset 0.5em" name="label5" caption="bind:Variables.staticVariableUsingForm1.dataSet"></wm-label>
+                </wm-tabpane>
+                <wm-tabpane name="tabpane4" title="Two-way binding using Prefab"></wm-tabpane>
+                <wm-tabpane name="tabpane5" title="Two-Way Biinding using ListForm">
+                    <wm-list listclass="list-group" itemclass="list-group-item" template="true" itemsperrow="xs-1 sm-1 md-1 lg-1" class="media-list" name="staticVariableUsingListFormList1" dataset="bind:Variables.staticVariableUsingListForm.dataSet" navigation="Basic">
+                        <wm-listtemplate layout="inline" name="listtemplate2">
+                            <wm-container class="media-body" padding="unset unset unset 1.25em" name="container7">
+                                <wm-label name="Name" class="p media-heading" caption="bind:Variables.staticVariableUsingListForm.dataSet.empId" fontsize="1.143" fontunit="em"></wm-label>
+                                <wm-label name="JobTitle" caption="bind:Variables.staticVariableUsingListForm.dataSet.name" class="p text-muted"></wm-label>
+                                <wm-form errormessage="" captionposition="top" title="Form" enctype="application/x-www-form-urlencoded" method="post" dataset="bind:Variables.staticVariableUsingListForm.dataSet" captionalign="left" name="staticVariableUsingListFormForm1"
+                                    formdata="bind:Widgets.staticVariableUsingListFormList1.currentItem">
+                                    <wm-layoutgrid columns="1" name="layoutgrid2">
+                                        <wm-gridrow name="gridrow6">
+                                            <wm-gridcolumn columnwidth="12" name="gridcolumn6">
+                                                <wm-form-field readonly="false" name="empId" displayname="Emp Id" key="empId" type="string" show="true" widget="text"></wm-form-field>
+                                            </wm-gridcolumn>
+                                        </wm-gridrow>
+                                        <wm-gridrow name="gridrow7">
+                                            <wm-gridcolumn columnwidth="12" name="gridcolumn7">
+                                                <wm-form-field readonly="false" name="name" displayname="Name" key="name" type="string" show="true" widget="text"></wm-form-field>
+                                            </wm-gridcolumn>
+                                        </wm-gridrow>
+                                    </wm-layoutgrid>
+                                    <wm-form-action key="reset" class="form-reset btn-secondary" iconclass="wi wi-refresh" display-name="Reset" type="reset"></wm-form-action>
+                                    <wm-form-action key="save" class="form-save btn-success" iconclass="wi wi-save" display-name="Save" type="submit"></wm-form-action>
+                                </wm-form>
+                            </wm-container>
+                            <wm-container class="media-right media-top" name="container8">
+                                <wm-button class="btn-transparent" iconclass="wi wi-share fa-2x" name="button2"></wm-button>
+                            </wm-container>
+                        </wm-listtemplate>
+                    </wm-list>
+                </wm-tabpane>
+                <wm-tabpane name="tabpane6"></wm-tabpane>
+            </wm-tabs>
+        </wm-page-content>
+    </wm-content>
+    <wm-footer content="footer" name="footer1"></wm-footer>
+</wm-page>

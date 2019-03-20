@@ -1,0 +1,161 @@
+{
+  "SV_EmpHugeData" : {
+    "name" : "SV_EmpHugeData",
+    "description" : "SV_EmpHugeData",
+    "version" : "V2",
+    "queryString" : "select * from SARASWATHI.EMPLOYEE_HUGE_RECORDS",
+    "countQueryString" : "select count(*) from (select * from SARASWATHI.EMPLOYEE_HUGE_RECORDS) wmTempTable",
+    "offlineQueryString" : null,
+    "nativeSql" : true,
+    "fetchCount" : true,
+    "type" : "SELECT",
+    "parameters" : [ ],
+    "request" : {
+      "wrapped" : false,
+      "typeRef" : null,
+      "method" : "GET"
+    },
+    "identifiers" : [ "EMPID" ],
+    "response" : {
+      "typeRef" : "com.testing16thmarch_10vm.wmstudio.models.query.SvEmpHugeDataResponse",
+      "returns" : "CUSTOM",
+      "responseType" : "PAGINATED",
+      "properties" : [ {
+        "name" : "EMPID",
+        "fieldName" : "empid",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.Integer",
+          "list" : false
+        }
+      }, {
+        "name" : "FIRSTNAME",
+        "fieldName" : "firstname",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.String",
+          "list" : false
+        }
+      }, {
+        "name" : "LASTNAME",
+        "fieldName" : "lastname",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.String",
+          "list" : false
+        }
+      }, {
+        "name" : "STREET",
+        "fieldName" : "street",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.String",
+          "list" : false
+        }
+      }, {
+        "name" : "CITY",
+        "fieldName" : "city",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.String",
+          "list" : false
+        }
+      }, {
+        "name" : "STATE",
+        "fieldName" : "state",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.String",
+          "list" : false
+        }
+      }, {
+        "name" : "POSTCODE",
+        "fieldName" : "postcode",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.String",
+          "list" : false
+        }
+      }, {
+        "name" : "GENDER",
+        "fieldName" : "gender",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.String",
+          "list" : false
+        }
+      }, {
+        "name" : "EMAIL",
+        "fieldName" : "email",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.String",
+          "list" : false
+        }
+      }, {
+        "name" : "USERNAME",
+        "fieldName" : "username",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.String",
+          "list" : false
+        }
+      }, {
+        "name" : "PASSWORD",
+        "fieldName" : "password",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.String",
+          "list" : false
+        }
+      }, {
+        "name" : "PHONE",
+        "fieldName" : "phone",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.String",
+          "list" : false
+        }
+      }, {
+        "name" : "NATIONALITY",
+        "fieldName" : "nationality",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.String",
+          "list" : false
+        }
+      }, {
+        "name" : "PICURL",
+        "fieldName" : "picurl",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "byte[]",
+          "list" : false
+        }
+      }, {
+        "name" : "DATEOFBIRTH",
+        "fieldName" : "dateofbirth",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.time.LocalDateTime",
+          "list" : false
+        }
+      } ]
+    }
+  }
+}

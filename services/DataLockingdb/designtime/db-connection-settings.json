@@ -1,0 +1,44 @@
+{
+  "username" : "{WM_CLOUD_MYSQL_USER_NAME}",
+  "password" : "{WM_CLOUD_MYSQL_PASSWORD}",
+  "url" : "jdbc:mysql://{WM_CLOUD_MYSQL_HOST}/DataLockingdb?useUnicode=yes&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&createDatabaseIfNotExist=true",
+  "driverClass" : "com.mysql.jdbc.Driver",
+  "dialect" : "com.wavemaker.runtime.data.dialect.MySQLDialect",
+  "serviceId" : "DataLockingdb",
+  "packageName" : "com.testing16thmarch_10vm.datalockingdb",
+  "dbType" : "MySQL",
+  "host" : "{WM_CLOUD_MYSQL_HOST}",
+  "dbName" : "DataLockingdb",
+  "port" : null,
+  "schemaName" : null,
+  "tableFilter" : [ {
+    "table" : "BOOLEAN_VERSION",
+    "schema" : null
+  }, {
+    "table" : "INT_VERSIONING",
+    "schema" : null
+  }, {
+    "table" : "TIMESTAMP_VERSIONING",
+    "schema" : null
+  }, {
+    "table" : "VERSIONCOLTABLE",
+    "schema" : null
+  } ],
+  "schemaFilter" : [ ],
+  "impersonateUser" : false,
+  "activeDirectoryDomain" : null,
+  "hbm2ddl" : "update",
+  "maxPageSize" : 100,
+  "minPoolSize" : 2,
+  "maxPoolSize" : 4,
+  "transactionTimeout" : 30,
+  "dataSourceType" : "WM_MANAGED_DATASOURCE",
+  "jndiName" : "",
+  "reloadInfo" : {
+    "reload" : false,
+    "reason" : null,
+    "message" : null,
+    "reImport" : false
+  },
+  "readOnly" : false
+}

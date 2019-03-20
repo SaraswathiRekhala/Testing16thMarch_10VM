@@ -1,0 +1,22 @@
+{
+  "displayName" : "TwoWayBindingPrefab",
+  "group" : "",
+  "iconUrl" : "/resources/images/imagelists/prefab-icon.png",
+  "resources" : {
+    "styles" : [ "/pages/Main/Main.css" ],
+    "scripts" : [ ]
+  },
+  "properties" : {
+    "twowayinbound" : {
+      "type" : "object",
+      "displayName" : "Twowayinbound",
+      "description" : "Twowayinbound",
+      "bindable" : "in-bound",
+      "widget" : "string",
+      "show" : true,
+      "disabled" : false
+    }
+  },
+  "events" : { },
+  "methods" : { }
+}

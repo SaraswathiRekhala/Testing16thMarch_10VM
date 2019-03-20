@@ -1,0 +1,41 @@
+{
+  "username" : "saraswathicascade",
+  "password" : "7b6a43524a362c086a7f707d0b092c2e1b786f66781a5c783a172653",
+  "url" : "jdbc:oracle:thin:@//54.189.37.152:1521/WMSTUDIO",
+  "driverClass" : "oracle.jdbc.driver.OracleDriver",
+  "dialect" : "com.wavemaker.runtime.data.dialect.OracleDialect",
+  "serviceId" : "WMSTUDIO",
+  "packageName" : "com.testing16thmarch_10vm.wmstudio",
+  "dbType" : "Oracle",
+  "host" : "54.189.37.152",
+  "dbName" : "WMSTUDIO",
+  "port" : "1521",
+  "schemaName" : "SARASWATHI",
+  "tableFilter" : [ {
+    "table" : "EMPLOYEE_HUGE_RECORDS",
+    "schema" : "SARASWATHI"
+  }, {
+    "table" : "PERSON_FRUITS",
+    "schema" : "SARASWATHICASCADE"
+  }, {
+    "table" : "TIMESTAMP_VERSIONING",
+    "schema" : "SARASWATHICASCADE"
+  } ],
+  "schemaFilter" : [ "SARASWATHICASCADE", "SARASWATHI" ],
+  "impersonateUser" : false,
+  "activeDirectoryDomain" : null,
+  "hbm2ddl" : "none",
+  "maxPageSize" : 100,
+  "minPoolSize" : 2,
+  "maxPoolSize" : 4,
+  "transactionTimeout" : 30,
+  "dataSourceType" : "WM_MANAGED_DATASOURCE",
+  "jndiName" : "",
+  "reloadInfo" : {
+    "reload" : false,
+    "reason" : null,
+    "message" : null,
+    "reImport" : false
+  },
+  "readOnly" : false
+}
